@@ -1,4 +1,5 @@
 # coding: utf-8
+require 'pry'
 
 RSpec.configure do |config|
   unless ENV['TRANSPEC_TEST']

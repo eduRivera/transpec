@@ -45,6 +45,7 @@ module Transpec
           ['oneliner',       :convert_oneliner?],
           ['should_receive', :convert_should_receive?],
           ['stub',           :convert_stub?],
+          ['stub_chain',     :convert_stub?],
           ['have_items',     :convert_have_items?],
           ['its',            :convert_its?],
           ['pending',        :convert_pending?],
