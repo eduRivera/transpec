@@ -62,7 +62,8 @@ module Transpec
 
     define_feature :receive_messages,               '3.0.0.beta1'
 
-    define_feature :receive_message_chain,          '3.0.0.beta2'
+    define_feature :receive_message_chain,          '3.0.1',
+      except: ['2.99.0', '2.99.0.beta1', '2.99.0.rc1', '3.0.0.beta1', '3.0.0.beta2']
     define_feature :non_should_matcher_protocol,    '3.0.0.beta2'
     define_feature :non_monkey_patch_example_group, '3.0.0.beta2'
     define_feature :hook_scope_alias,               '3.0.0.beta2'

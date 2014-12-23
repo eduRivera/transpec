@@ -58,7 +58,8 @@ module Transpec
       end
 
       def allowize!
-        return if method_name == :stub_chain && !rspec_version.receive_message_chain_available?
+        #require 'pry'; binding.pry
+        return if method_name == :stub_chain #&& !rspec_version.receive_message_chain_available?
 
         unless allow_to_receive_available?
           fail ContextError.new("##{method_name}", '#allow', selector_range)
